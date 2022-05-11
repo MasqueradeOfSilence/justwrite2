@@ -1,2 +1,2 @@
 # justwrite2
-Another iteration of the Just Write CR website. I would like to start afresh and make this the final rewrite. 
+Just Write Court Reporters website: Final Rewrite (2022)
