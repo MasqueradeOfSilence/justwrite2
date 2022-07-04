@@ -13,3 +13,87 @@ body
 {
     background-image: url("../img/background.jpg");
 }
+
+textarea, input
+{
+  width: 250px;
+}
+
+/*
+  For mobile screens
+*/
+@media only screen and (max-width: 479px)
+{
+  input, textarea
+  {
+    width: 180px;
+  }
+}
+
+.intro a:link
+{
+  color: darkslategray !important;
+}
+
+.intro
+{
+  padding-left: 50px;
+  color: black !important;
+}
+
+.sendEmailButton
+{
+  border-radius: 10%;
+  border-color: slategray;
+}
+
+.contactLabel
+{
+  font-size: 98%;
+}
+
+#skillContainer
+{
+  font-size: 35px;
+}
+
+#contactList
+{
+  float: left;
+}
+
+#footerUL
+{
+  list-style-type: none;
+  font-size: 16px;
+}
+
+#footerDiv a:link
+{
+  color: darkslategray !important;
+}
+
+#contactFooterDiv
+{
+  float: right;
+  padding-right: 3%;
+  transform: scale(0.95);
+}
+
+#sendMeAMessage
+{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#leftHalfOfContactForm
+{
+  float: left;
+  width: 45%;
+}
+
+#rightHalfOfContactForm
+{
+  float: right;
+  width: 45%;
+}

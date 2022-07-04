@@ -10,10 +10,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Using FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- Overarching CSS. Try to keep this consistent -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Icons: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
     <title>Welcome | Just Write Court Reporters</title>
   </head>
@@ -31,7 +32,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto"> <!-- instead of navbar-center -->
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
           </li>
@@ -63,7 +64,141 @@
    </div>
    <div class="shadow p-3 mb-5 bg-dark information"></div>
 
+   <br>
+
+   <!-- nitroduction to the website-->
+   <div class="intro">
+    <h1 class="infoHeading">Scheduling Available Nationwide</h1>
+    <hr>
+
+    <p class="aboutUsParagraph">
+      <b class="boldText">Just Write Court Reporters </b> provides diverse services to the legal community. Our goal is to give complete satisfaction
+      to our clients. With our vast network of court reporters and affiliates, we are able to provide unparalleled service to attorneys, government agencies, 
+      and insurance companies. We provide court reporting, legal videography, language interpreters, legal copying/scanning, transcription and process services.
+    </p>
+
+    <p class="aboutUsParagraph">
+      Whether your needs are in our offices in Ventura, elsewhere in Southern California, or anywhere in the country, you only need to make one call. We are available 24 hours a day, 7 days a week.
+    </p>
+
+    <p class="aboutUsParagraph">
+      At Just Write Court Reporters, we guarantee that everything will be “just right.”
+    </p>
+
+    <div class="introductoryParagraph">
+      <h1>Learn more about our services:</h1>
+      <hr>
+
+      <!-- SERVICES -->
+      <!-- Center tag is deprecated but I'm going to use it anyway because all other ways of centering suck. -->
+      <center>
+        <br>
+        <div class="container" id="skillContainer">
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="services.html#courtReporting">
+                <span class="iconify" data-icon="mdi-scale-balance" data-inline="false"></span>
+                Court Reporting
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="services.html#videoServices">
+                <span class="iconify" data-icon="mdi-video" data-inline="false"></span>
+                Video Services
+              </a>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="services.html#processServices">
+                <span class="iconify" data-icon="dashicons-businessman" data-inline="false"></span>
+                Process Services
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="services.html#transcription">
+                <span class="iconify" data-icon="entypo-pencil" data-inline="false"></span>
+                Transcription
+              </a>
+            </div>
+          </div>
+        </div>
+      </center>
+
+    </div>
+
+   </div>
+
    <br><br><br><br>
+
+   <hr>
+    <div id="footerDiv">
+
+      <div id="contactList">
+        <ul id="footerUL">
+          <li class="nameFooterLI"><b>Just Write Court Reporters</b></li>
+          <li class="footerLI">
+            <a href="https://www.google.com/maps/place/5450+Telegraph+Rd+%23100,+Ventura,+CA+93003/@34.2742962,-119.2307848,14z/data=!4m5!3m4!1s0x80e9b2afdc5658db:0xf35fd636ae32fa8f!8m2!3d34.2766235!4d-119.2209733"
+            target="_blank">
+            <span class="iconify" data-icon="entypo-address" data-inline="false"></span>
+              5450 Telegraph Road #100
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ventura, CA 93003
+            </a>
+          </li>
+          <li class="footerLI"><a href="mailto:depos@justwritecr.com">
+            <i class="fa fa-paper-plane-o"></i>
+              depos@justwritecr.com</a>
+          </li>
+          <li class="footerLI">
+            <a href="https://www.linkedin.com/in/charles-neville-528aa631/" target="_blank">
+              <i class="fa fa-linkedin-square"></i>
+              LinkedIn
+            </a>
+          </li>
+          <li class="footerLI">
+            <a href="tel:805-658-2777">
+              <span class="iconify" data-icon="mdi-phone" data-inline="false"></span>
+                805.658.2777
+            </a>
+          </li>
+          <li class="footerLI">
+            <a href="tel:800-660-2778">
+              <span class="iconify" data-icon="mdi-phone" data-inline="false"></span>
+                800.660.2778
+            </a>
+          </li>
+          <li class="footerLI">&#169; July 2022</li>
+        </ul>
+      </div>
+
+      <!-- Email Form -->
+      <div id="contactFooterDiv">
+        <p id="sendMeAMessage">Email Us</p>
+        <form method="post" action="contact.php" class="emailForm">
+          <div id="leftHalfOfContactForm">
+            <label for="name" class="contactLabel">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="subject" class="contactLabel">Subject:</label><br>
+            <input type="text" id="subject" name="subject"><br>
+            <label for="email" class="contactLabel">Email:</label><br>
+            <input type="text" id="email" name="email">
+          </div>
+
+          <div id="rightHalfOfContactForm">
+            <label for="mathQuestion" class="contactLabel">Security Question: What is 8 times 7?</label><br>
+            <input type="text" id="mathQuestion" name="mathQuestion">
+            <label for="message" class="contactLabel">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" class="sendEmailButton" value="Send Email">
+          </div>
+        </form>
+      </div>
+
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
