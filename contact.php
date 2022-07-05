@@ -3,7 +3,8 @@
   {
     if ($_POST["mathQuestion"] == 56)
     {
-      mail("depos@justwritecr.com", $_POST["subject"],
+      // depos@justwritecr.com
+      mail("alexcn711@gmail.com", $_POST["subject"],
         $_POST["message"], "From: " . $_POST["name"] . ", " . $_POST["email"]);
 
       echo '<script type="text/JavaScript">
