@@ -19,6 +19,16 @@ textarea, input
   width: 250px;
 }
 
+legend
+{
+  width: 30%;
+}
+
+input[type="radio"]
+{
+  width: auto;
+}
+
 /*
   For mobile screens
 */
@@ -57,6 +67,12 @@ textarea, input
 {
   font-size: 98%;
 }
+
+/* .schedulerForm
+{
+  display: flex;
+  justify-content: space-evenly;
+} */
 
 #skillContainer
 {
