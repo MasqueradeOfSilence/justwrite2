@@ -35,9 +35,15 @@ textarea, input
   color: darkslategray !important;
 }
 
+.intro a:visited 
+{
+  color: darkslategray !important;
+}
+
 .intro
 {
   padding-left: 50px;
+  padding-right: 50px;
   color: black !important;
 }
 
