@@ -22,6 +22,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link rel="icon" href="justWriteFavicon.ico" type="image/x-icon"/>
+    <!-- Recaptcha: -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+      function onSubmit(token) 
+      {
+        // Button press action
+        document.getElementById("demo-form").submit();
+      }
+    </script>
 
     <title>Welcome | Just Write Court Reporters</title>
   </head>
@@ -198,8 +207,13 @@
           </div>
 
           <div id="rightHalfOfContactForm">
-            <label for="mathQuestion" class="contactLabel">Security Question: What is 8 times 7?</label><br>
-            <input type="text" id="mathQuestion" name="mathQuestion">
+            <!-- <label for="mathQuestion" class="contactLabel">Security Question: What is 8 times 7?</label><br>
+            <input type="text" id="mathQuestion" name="mathQuestion"> -->
+            <label for="recaptcha" class="contactLabel">Captcha</label><br>
+            <button class="g-recaptcha" id="recaptcha"
+              data-sitekey="6Le6OMkgAAAAAFdVb1tWgWaW6EZSul1WO6h0D0E5" 
+              data-callback='onSubmit' 
+              data-action='submit'>Submit</button> <br>
             <label for="message" class="contactLabel">Message:</label><br>
             <textarea id="message" name="message"></textarea><br>
             <input type="submit" class="sendEmailButton" value="Send Email">
