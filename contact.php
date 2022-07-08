@@ -4,7 +4,7 @@
     if ($_POST["mathQuestion"] == 56)
     {
       // depos@justwritecr.com
-      mail("alexcn711@gmail.com", $_POST["subject"],
+      mail("softwaredev@alexanderneville.com", $_POST["subject"],
         $_POST["message"], "From: " . $_POST["name"] . ", " . $_POST["email"]);
 
       echo '<script type="text/JavaScript">
