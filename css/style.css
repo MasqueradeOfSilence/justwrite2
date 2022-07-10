@@ -63,14 +63,38 @@ input[type="radio"]
   border-color: slategray;
 }
 
+.contactFooterDiv
+{
+  float: right;
+  padding-right: 3%;
+  transform: scale(0.95);
+}
+
+.leftHalfOfContactForm
+{
+  float: left;
+  width: 45%;
+}
+
+.rightHalfOfContactForm
+{
+  float: right;
+  width: 45%;
+}
+
 .contactLabel
 {
   font-size: 98%;
 }
 
-.captionAdjacent
+.recaptchaAdjacent
 {
   width: 120%;
+}
+
+.recaptchaAdjacentSchedule
+{
+  width: 300px;
 }
 
 #skillContainer
@@ -94,27 +118,8 @@ input[type="radio"]
   color: darkslategray !important;
 }
 
-#contactFooterDiv
-{
-  float: right;
-  padding-right: 3%;
-  transform: scale(0.95);
-}
-
 #sendMeAMessage
 {
   font-size: 17px;
   font-weight: bold;
-}
-
-#leftHalfOfContactForm
-{
-  float: left;
-  width: 45%;
-}
-
-#rightHalfOfContactForm
-{
-  float: right;
-  width: 45%;
 }

@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link rel="icon" href="img/justWriteFavicon.ico" type="image/x-icon"/>
+    <!-- Recaptcha: -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <title>Welcome | Just Write Court Reporters</title>
   </head>
@@ -119,66 +121,65 @@
         <hr>
         <div id="footerDiv">
 
-        <div id="contactList">
-            <ul id="footerUL">
-            <li class="nameFooterLI"><b>Just Write Court Reporters</b></li>
-            <li class="footerLI">
-                <a href="https://www.google.com/maps/place/5450+Telegraph+Rd+%23100,+Ventura,+CA+93003/@34.2742962,-119.2307848,14z/data=!4m5!3m4!1s0x80e9b2afdc5658db:0xf35fd636ae32fa8f!8m2!3d34.2766235!4d-119.2209733"
-                target="_blank">
-                <span class="iconify" data-icon="entypo-address" data-inline="false"></span>
-                5450 Telegraph Road #100
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ventura, CA 93003
-                </a>
-            </li>
-            <li class="footerLI"><a href="mailto:depos@justwritecr.com">
-                <i class="fa fa-paper-plane-o"></i>
-                depos@justwritecr.com</a>
-            </li>
-            <li class="footerLI">
-                <a href="https://www.linkedin.com/in/charles-neville-528aa631/" target="_blank">
-                <i class="fa fa-linkedin-square"></i>
-                LinkedIn
-                </a>
-            </li>
-            <li class="footerLI">
-                <a href="tel:805-658-2777">
-                <span class="iconify" data-icon="mdi-phone" data-inline="false"></span>
-                    805.658.2777
-                </a>
-            </li>
-            <li class="footerLI">
-                <a href="tel:800-660-2778">
-                <span class="iconify" data-icon="mdi-phone" data-inline="false"></span>
-                    800.660.2778
-                </a>
-            </li>
-            <li class="footerLI">&#169; July 2022</li>
-            </ul>
-        </div>
-
-        <!-- Email Form -->
-        <div id="contactFooterDiv">
-            <p id="sendMeAMessage">Email Us</p>
-            <form method="post" action="contact.php" class="emailForm">
-            <div id="leftHalfOfContactForm">
-                <label for="name" class="contactLabel">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="subject" class="contactLabel">Subject:</label><br>
-                <input type="text" id="subject" name="subject"><br>
-                <label for="email" class="contactLabel">Email:</label><br>
-                <input type="text" id="email" name="email">
+            <div id="contactList">
+                <ul id="footerUL">
+                <li class="nameFooterLI"><b>Just Write Court Reporters</b></li>
+                <li class="footerLI">
+                    <a href="https://www.google.com/maps/place/5450+Telegraph+Rd+%23100,+Ventura,+CA+93003/@34.2742962,-119.2307848,14z/data=!4m5!3m4!1s0x80e9b2afdc5658db:0xf35fd636ae32fa8f!8m2!3d34.2766235!4d-119.2209733"
+                    target="_blank">
+                    <span class="iconify" data-icon="entypo-address" data-inline="false"></span>
+                    5450 Telegraph Road #100
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ventura, CA 93003
+                    </a>
+                </li>
+                <li class="footerLI"><a href="mailto:depos@justwritecr.com">
+                    <i class="fa fa-paper-plane-o"></i>
+                    depos@justwritecr.com</a>
+                </li>
+                <li class="footerLI">
+                    <a href="https://www.linkedin.com/in/charles-neville-528aa631/" target="_blank">
+                    <i class="fa fa-linkedin-square"></i>
+                    LinkedIn
+                    </a>
+                </li>
+                <li class="footerLI">
+                    <a href="tel:805-658-2777">
+                    <span class="iconify" data-icon="mdi-phone" data-inline="false"></span>
+                        805.658.2777
+                    </a>
+                </li>
+                <li class="footerLI">
+                    <a href="tel:800-660-2778">
+                    <span class="iconify" data-icon="mdi-phone" data-inline="false"></span>
+                        800.660.2778
+                    </a>
+                </li>
+                <li class="footerLI">&#169; July 2022</li>
+                </ul>
             </div>
 
-            <div id="rightHalfOfContactForm">
-                <label for="mathQuestion" class="contactLabel">Security Question: What is 8 times 7?</label><br>
-                <input type="text" id="mathQuestion" name="mathQuestion">
-                <label for="message" class="contactLabel">Message:</label><br>
-                <textarea id="message" name="message"></textarea><br>
-                <input type="submit" class="sendEmailButton" value="Send Email">
+            <!-- Email Form -->
+            <div class="contactFooterDiv">
+                <p id="sendMeAMessage">Email Us</p>
+                <form method="post" action="contact.php" class="emailForm">
+                <div class="leftHalfOfContactForm">
+                    <label for="name" class="contactLabel">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="subject" class="contactLabel">Subject:</label><br>
+                    <input type="text" id="subject" name="subject"><br>
+                    <label for="email" class="contactLabel">Email:</label><br>
+                    <input type="text" id="email" name="email">
+                </div>
+
+                <div class="rightHalfOfContactForm">
+                    <label for="message" class="contactLabel">Message:</label><br>
+                    <textarea id="message" name="message" class="recaptchaAdjacent"></textarea><br><br>
+                    <div class="g-recaptcha" data-sitekey="6LeQytogAAAAAI2ulXar9psdnawWywUY2HcW7t8D"></div> <br>
+                    <input type="submit" class="sendEmailButton recaptchaAdjacent" value="Send Email">
+                </div>
+                </form>
             </div>
-            </form>
-        </div>
 
         </div>
 

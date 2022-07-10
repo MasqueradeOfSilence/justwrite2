@@ -195,10 +195,10 @@
       </div>
 
       <!-- Email Form -->
-      <div id="contactFooterDiv">
+      <div class="contactFooterDiv">
         <p id="sendMeAMessage">Email Us</p>
         <form method="post" action="contact.php" class="emailForm">
-          <div id="leftHalfOfContactForm">
+          <div class="leftHalfOfContactForm">
             <label for="name" class="contactLabel">Name:</label><br>
             <input type="text" id="name" name="name"><br>
             <label for="subject" class="contactLabel">Subject:</label><br>
@@ -207,14 +207,11 @@
             <input type="text" id="email" name="email">
           </div>
 
-          <div id="rightHalfOfContactForm">
-            <!-- <label for="mathQuestion" class="contactLabel">Security Question: What is 8 times 7?</label><br>
-            <input type="text" id="mathQuestion" name="mathQuestion"> -->
-            <!-- <label for="recaptcha" class="contactLabel">Captcha</label><br> -->
+          <div class="rightHalfOfContactForm">
             <label for="message" class="contactLabel">Message:</label><br>
-            <textarea id="message" name="message" class="captionAdjacent"></textarea><br><br>
+            <textarea id="message" name="message" class="recaptchaAdjacent"></textarea><br><br>
             <div class="g-recaptcha" data-sitekey="6LeQytogAAAAAI2ulXar9psdnawWywUY2HcW7t8D"></div> <br>
-            <input type="submit" class="sendEmailButton captionAdjacent" value="Send Email">
+            <input type="submit" class="sendEmailButton recaptchaAdjacent" value="Send Email">
           </div>
         </form>
       </div>
