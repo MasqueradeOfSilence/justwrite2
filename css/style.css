@@ -68,6 +68,11 @@ input[type="radio"]
   font-size: 98%;
 }
 
+.captionAdjacent
+{
+  width: 120%;
+}
+
 #skillContainer
 {
   font-size: 35px;

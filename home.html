@@ -28,7 +28,8 @@
       function onSubmit(token) 
       {
         // Button press action
-        document.getElementById("demo-form").submit();
+        // document.getElementById("demo-form").submit();
+        alert("submit");
       }
     </script>
 
@@ -209,14 +210,11 @@
           <div id="rightHalfOfContactForm">
             <!-- <label for="mathQuestion" class="contactLabel">Security Question: What is 8 times 7?</label><br>
             <input type="text" id="mathQuestion" name="mathQuestion"> -->
-            <label for="recaptcha" class="contactLabel">Captcha</label><br>
-            <button class="g-recaptcha" id="recaptcha"
-              data-sitekey="6Le6OMkgAAAAAFdVb1tWgWaW6EZSul1WO6h0D0E5" 
-              data-callback='onSubmit' 
-              data-action='submit'>Submit</button> <br>
+            <!-- <label for="recaptcha" class="contactLabel">Captcha</label><br> -->
             <label for="message" class="contactLabel">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br>
-            <input type="submit" class="sendEmailButton" value="Send Email">
+            <textarea id="message" name="message" class="captionAdjacent"></textarea><br><br>
+            <div class="g-recaptcha" data-sitekey="6LeQytogAAAAAI2ulXar9psdnawWywUY2HcW7t8D"></div> <br>
+            <input type="submit" class="sendEmailButton captionAdjacent" value="Send Email">
           </div>
         </form>
       </div>
